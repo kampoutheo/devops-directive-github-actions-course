@@ -32,3 +32,5 @@ jobs:
           echo "WORKFLOW_VAR: $WORKFLOW_VAR"                 # still visible
           echo "JOB_VAR:      ${FOO:-<UNSET>}"               # not set here
           echo "STEP_VAR:     ${STEP_VAR:-<UNSET>}"          # not set here
+    needs:
+      job-1
